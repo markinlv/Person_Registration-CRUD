@@ -65,7 +65,7 @@ public class dadosBancarios extends Attributes_getsetts{
 				if(dados.getCpf() == cpf) {
 				d=dados;	
 					System.out.println("---------------------------------------------------------|");
-					System.out.println("INFORMAÇÕES DA CONTA" + dados.getNome().toUpperCase());
+					System.out.println("INFORMAÇÕES DA CONTA " + dados.getNome().toUpperCase());
 					System.out.println("---------------------------------------------------------|");
 					System.out.println("CPF: " + dados.getCpf());
 					System.out.println("Nome: " + dados.getNome());
@@ -105,11 +105,11 @@ public class dadosBancarios extends Attributes_getsetts{
 					nome = entrada.nextLine();
 					op.setNome(nome);
 
-					System.out.print("Número da conta: ");
+					System.out.print("Número da conta do novo cliente: ");
 					numeroConta = entrada.nextInt();
 					op.setNumeroConta(numeroConta);
 
-					System.out.print("Agencia do cliente: ");
+					System.out.print("Agencia do cliente do novo cliente: ");
 					agencia = entrada.nextInt();
 					op.setAgencia(agencia);
 					
@@ -129,17 +129,17 @@ public class dadosBancarios extends Attributes_getsetts{
 		if (listaDados.isEmpty()) {
 			System.out.println("Remoção indisponível. Não existe dados cadastrados no sistema ainda");
 		} else {
-			System.out.println(" [1] para remover todos os produtos da lista");
-			System.out.println(" [2] para remover apenas um produto da lista");
+			System.out.println(" [1] Remover todos os dados da lista");
+			System.out.println(" [2] Remover apenas um dado da lista");
 			System.out.println("---------------------------------------------------------");
 			exibir();
 			int op = entrada.nextInt();	
 			
 			if (op == 1) {
 				listaDados.clear();
-				System.out.println("PRODUTOS REMOVIDO COM SUCESSO!");
+				System.out.println("DADOS REMOVIDO COM SUCESSO!");
 			} else if (op == 2) {
-				System.out.println("Digite o CPF do produto que deseja remover da lista: ");
+				System.out.println("Digite o CPF do cliente que deseja remover da lista: ");
 				System.out.println("---------------------------------------------------------");
 				exibir();
 				int id = entrada.nextInt();
@@ -152,7 +152,7 @@ public class dadosBancarios extends Attributes_getsetts{
 						itr.remove();
 					}
 				}
-				System.out.println("PRODUTO REMOVIDO COM SUCESSO!");
+				System.out.println("CLIENTE REMOVIDO COM SUCESSO!");
 			}
 		}
 							
