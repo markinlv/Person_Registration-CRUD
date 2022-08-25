@@ -1,4 +1,4 @@
- # CRUD completo com os métodos GET e SET (java, poo)
+ # CRUD com os métodos GET e SET (java, poo)
 
 ![image](https://cdn.discordapp.com/attachments/498213084486434816/1007698082642809035/unknown.png)
 
